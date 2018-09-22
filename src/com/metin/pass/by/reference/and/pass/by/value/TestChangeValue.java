@@ -18,12 +18,13 @@ public class TestChangeValue {
         System.out.println(p2);
     }
 
-    private static void changeValue(Person person) {
+    private static void changeValue(Person personParam) {
         System.out.println("-------changeValue-------");
-        System.out.println(person);
-        person = new Person("Dilek");
-        person.setName("Ahmet");
+        System.out.println(personParam);
+        personParam.setName("Mustafa");
+        personParam = new Person("Dilek");
+        personParam.setName("Ahmet");
         System.out.println("-------changeValue2-------");
-        System.out.println(person);
+        System.out.println(personParam);
     }
 }
